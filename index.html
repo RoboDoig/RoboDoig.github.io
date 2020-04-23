@@ -13,15 +13,24 @@
                 <h1>Andrew Erskine</h1>
                 <h2>Neuroscientist</h2>
                 <h2>Developer</h2>
-                <img src="robodoig.jpg">
+                <img src="robodoig.jpg" id="profile-pic">
             </div>
             <nav>
-                <div class="link-container">Home</div>
-                <div class="link-container">About</div>
+                <div class="link-container">
+                    <a href="#home-anchor">Home</a>
+                </div>
+                <div class="link-container">
+                    <a href="#about-anchor">About</a>
+                </div>
                 <h3></h3>
-                <div class="link-container">Publications</div>
-                <div class="link-container">Software Tools</div>
-                <div class="link-container">Game Development</div>
+                <div class="link-container"></div>
+                    <a href="#publication-anchor">Publications</a>
+                <div class="link-container">
+                    <a href="#software-tools-anchor">Software Tools</a>
+                </div>
+                <div class="link-container">
+                    <a href="#game-dev-anchor">Game Development</a>
+                </div>
                 <h3></h3>
                 <div class="link-container">GitHub</div>
                 <div class="link-container">Twitter</div>
@@ -29,51 +38,117 @@
             </nav>
         </div>
         <div class="main">
-            <main>
+            <a id="home-anchor">
+                <main>
                 <div class="intro">
                     <p class="intro-lead">It's me, Andrew Erskine</p>
                     <p>I do x, y z</p>
                 </div>
                 <div class="about">
-                    <h1 class="section-title">ABOUT</h1>
-                    <div class="milestone-box" id="hires-lab">
+                    <a id="about-anchor">
+                        <h1 class="section-title">ABOUT</h1>
+                        <div class="milestone-box" id="hires-lab">
                         <h2>2018 - Present</h2>
                         <h2>Postdoctoral Scholar - Hires lab, University of Southern California</h2>
                         <p></p>
-                        <p>Here are the things I did in this milestone</p>
+                        <p>Utilising all-optical techniques to investigate neuronal ensemble recruitment in somatosensory cortex.
+                            Using 2-photon imaging with spatial-light modulation optogenetics to investigate information propagation across cortical layers, and the effects of ensemble recruitment on tactile perception. <br /><br />
+
+                            Modified DeepLabCut for Google Cloud - allowing for fast, parallel usage on large whisker tracking datasets.
+                        </p>
                     </div>
-                    <div class="milestone-box" id="schaefer-lab">
+                        <div class="milestone-box" id="schaefer-lab">
                         <h2>2013 - 2018</h2>
                         <h2>PhD Student - Schaefer lab, The Francis Crick Institute / UCL</h2>
                         <p></p>
-                        <p>Here are the things I did in this milestone</p>
+                        <p>Developed an automated, high-throughput mouse behavior system (AutonoMouse)
+                            capable of training 20+ mice simultaneously in GNG/2AFC paradigms; as well as the
+                            associated control and analysis software.<br /><br />
+                            Utilised AutonoMouse in a large-scale study investigating the effect of targeted
+                            olfactory bulb (OB) lesions on olfactory discrimination behaviors (Erskine 2019, PLOS ONE) <br /><br />
+                            Using a custom-built odor delivery device, in vivo electrophysiology and automated
+                            behavior: investigated the role of temporal patterns in odor concentration on
+                            detection and coding in the mouse OB (Erskine 2019, bioRxiv). <br /><br />
+                            Produced several software solutions for use in the lab.
+                        </p>
                     </div>
-                    <div class="milestone-box" id="manc-university">
+                        <div class="milestone-box" id="manc-university">
                         <h2>2009 - 2013</h2>
-                        <h2>MNeurosci - The University of Manchester</h2>
+                        <h2>Master's Project Student - Petersen lab, The University of Manchester</h2>
                         <p></p>
-                        <p>Here are the things I did in this milestone</p>
+                        <p>Developed protocol and experimental rig for head-fixed GNG behavioral training in
+                            mice with simultaneous awake in vivo electrophysiology and high-speed recording
+                            / tracking of whisker movement. <br /><br />
+                            Using this approach, investigated the coding of whisker kinematics in awake mice
+                            at the primary afferent level (Campagner et al., 2016; Bale et al., 2015) <br /><br />
+                        </p>
                     </div>
+                        <div class="milestone-box" id="columbia">
+                            <h2>Summer 2012</h2>
+                            <h2>Visiting Scholar - Paninski Lab, Columbia University</h2>
+                            <p></p>
+                            <p>Project investigating approaches for decoding limb position from macaque PMd
+                                multi-site recordings for neural prosthetic applications.
+                            </p>
+                        </div>
+                        <div class="milestone-box" id="manc-summer">
+                            <h2>Summer 2011</h2>
+                            <h2>Summer Placement Student - Petersen Lab, The University of Manchester</h2>
+                            <p></p>
+                            <p>Project investigating encoding of whisker stimulation in rodent somatosensation.
+                                Built and tested a number of encoding models accounting for whisker afferent firing
+                                under white-noise stimulation.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="publications">
-                    <h1 class="section-title">PUBLICATIONS</h1>
+                    <a id="publication-anchor">
+                        <h1 class="section-title">PUBLICATIONS</h1>
+                        <div class="publications-box" id="fast-odours" onclick="window.open('https://www.biorxiv.org/content/10.1101/570689v1','_blank')">
+                            <img src="fast-odours.JPG">
+                            <h2>Mammalian olfaction is a high temporal bandwidth sense</h2>
+                            <p><i><b>Erskine, A., </b> Ackels, T., Dasgupta, D., Fukunaga, I., Schaefer, A. T. (bioRxiv 2019)</i></p>
+                            <p>Paper Description</p>
+                        </div>
+                        <div class="publications-box" id="autonomouse" onclick="window.open('https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0211571','_blank')">
+                            <img src="autonomouse.gif">
+                            <h2>AutonoMouse: High throughput operant conditioning reveals progressive impairment with graded olfactory bulb lesions</h2>
+                            <p><i><b>Erskine, A., </b> Bus, T., Herb, J. T., Schaefer, A. T. (PLOS ONE 2019)</i></p>
+                            <p>Paper Description</p>
+                        </div>
+                        <div class="publications-box" id="whisker-kinematics" onclick="window.open('https://elifesciences.org/articles/10696','_blank')">
+                            <img src="whisker.gif">
+                            <h2>Prediction of primary somatosensory neuron activity during active tactile exploration</h2>
+                            <p><i>Campagner, D., Evans, H. M., Bale, M. R., <b>Erskine, A., </b> Petersen, R. S. (eLife 2016)</i></p>
+                            <p>Paper Description</p>
+                        </div>
+                        <div class="publications-box" id="whisker-precision" onclick="window.open('https://www.jneurosci.org/content/35/15/5935.abstract','_blank')">
+                            <img src="whisker-precision.jpg">
+                            <h2>Microsecond-scale timing precision in rodent trigeminal primary afferents</h2>
+                            <p><i>Bale, M. R., Campagner, D. <b>Erskine, A., </b> Petersen, R. S. (JNeurosci 2015)</i></p>
+                            <p>Paper Description</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="software-tools">
-                    <h1 class="section-title">SOFTWARE TOOLS</h1>
+                    <a id="software-tools-anchor">
+                        <h1 class="section-title">SOFTWARE TOOLS</h1>
+                        <div class="software-box" id="dlc-cloudml" onclick="window.open('https://www.biorxiv.org/content/10.1101/570689v1','_blank')">
+                            <img src="dlc-whiskers.gif">
+                            <h2>Cloud-based DeepLabCut</h2>
+                            <p>Software description</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="game-dev">
-                    <h1 class="section-title">GAME DEVELOPMENT</h1>
+                    <a id="game-dev-anchor">
+                        <h1 class="section-title">GAME DEVELOPMENT</h1>
+                    </a>
                 </div>
             </main>
+            </a>
         </div>
     </div>
-     <!--<div class="background-white">-->
-        <!--<div id="about" class="container">-->
-            <!--<img src="robodoig.jpg" width="256" height="256 ">-->
-            <!--<h2>About</h2>-->
-            <!--<p class="lead">Neuroscientist / Developer</p>-->
-        <!--</div>-->
-    <!--</div>-->
-
 </body>
 </html>

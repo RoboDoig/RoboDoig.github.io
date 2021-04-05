@@ -16,11 +16,12 @@ h2 {
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 body {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'IBM Plex Mono', monospace;*/
 }
 
 div {
